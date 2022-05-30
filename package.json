@@ -5,7 +5,7 @@
   "author": "JU",
   "license": "https://databayit.github.io/",
   "description": "주식회사 databayit의 홈페이지 입니다.",
-  "homepage": "https://databayit.github.io/main",
+  "homepage": "https://databayit.github.io",
   "engines": {
     "node": "14 || 15 || 16",
     "npm": ">=6"
@@ -40,6 +40,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
